@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobile,Electronics,Accessories,Groceries & Furniture etc...</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Neonderthaw&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Neonderthaw&family=PT+Sans+Narrow&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2874f0;
+            width: 100vw;
+            position:sticky;
+            top: 0;                   /*for stick the header in top*/
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .logo img {
+            display: flex;
+            width: 100px;
+            padding: 0px 25px;
+        }
+
+
+        nav ul {
+            height: 60px;
+            display: flex;
+            list-style: none;
+            color: white;
+            align-items: center;
+            align-content: center;
+        }
+
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            padding: 0 12px;
+        }
+
+        nav ul li a:hover {
+            font-weight: bolder;
+        }
+
+
+        .search {
+            display: flex;
+            align-items: center;
+            padding: 0px 33px;
+        }
+
+        .search input {
+            width: 30vw;
+            height: 30px;
+            padding-left: 130px;
+            margin: 0px 20px 0px 50px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: #2874f0;
+            color: white;
+            border: 2px solid white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: white;
+            min-height: calc(100vh - 60px - 5vh);                     /*always use this function to calculate container height*/
+            width: 100vw;
+        }
+
+        .slider {
+            width: 80vw;
+            margin: 8px auto;
+            overflow: hidden;
+
+        }
+
+        .box {
+            background-color: rgb(234, 230, 226);
+            max-width: 98vw;
+            margin: auto;
+        }
+
+        .box-items {
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 31px;
+        }
+
+        .box h2 {
+            margin: 18px 0px;
+        }
+
+        .lines p {
+            text-align: center;
+            font-family: 'PT Sans Narrow', sans-serif
+        }
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            width: 100vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        @media screen and (max-width:1000px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            .logo {
+                justify-content: center;
+                margin: 10px 0px;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            .search {
+                justify-content: center;
+            }
+
+            .search input {
+                margin: 10px 16px;
+            }
+
+            nav ul {
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+
+            <ul>
+                <li><a href="https://www.flipkart.com">Home</a></li>
+                <li><a href="https://en.wikipedia.org">About</a></li>
+                <li><a href="https://www.google.co.in">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" placeholder="Search Your Product Here">
+                <button class="btn">Search
+
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/random/1000x500/?shopping, ecommerce)" alt="">
+            </div>
+            <div class="box">
+                <h2>
+                    <marquee direction="right" scrollamount="15" behavior="alternate">Join the Cricket Fun Now!
+                    </marquee>
+                </h2>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-bat" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Cricket bat</p>
+                        <p>Min 25% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-ball" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Cricket-ball</p>
+                        <p>Min 50% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-pants" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Cricket-Pants</p>
+                        <p>Min 25% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-drinks" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Drinks</p>
+                        <p>Min 25% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-shoes" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Shoes</p>
+                        <p>Min 60% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-shirts" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Shirts</p>
+                        <p>Min 25% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-bails" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Bails</p>
+                        <p>Min 30% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-Helmet" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Helmet</p>
+                        <p>Min 20% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <img src="https://source.unsplash.com/random/100x100/?cricket-Stumps" alt="" width="100px">
+
+                    <div class="lines">
+                        <p>Stumps</p>
+                        <p>Min 40% off</p>
+                        <p>Grab Now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--first card finish-->
+        <div class="box">
+            <h2>
+                <marquee direction="right" scrollamount="13" behavior="alternate">Start Your IIT-JEE/NEET Preparation
+                    Now!</marquee>
+            </h2>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Physics-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Physics</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Chemistry-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Chemistry</p>
+                    <p>Min 50% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Mathematics-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Mathematics</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?HC Verma" alt="" width="100px">
+
+                <div class="lines">
+                    <p>HC Verma</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Zoology-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Zoology</p>
+                    <p>Min 60% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Botany-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Botany</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?DC Pandey" alt="" width="100px">
+
+                <div class="lines">
+                    <p>DC Pandey</p>
+                    <p>Min 30% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Cengage-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Cengage</p>
+                    <p>Min 20% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Organic-Books" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Organic</p>
+                    <p>Min 40% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box">
+            <h2>
+                <marquee direction="right" scrollamount="16" behavior="alternate">Best Mobile Phones...!</marquee>
+            </h2>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Samsung-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Samsung-M</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Redmi-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Mi Note-11</p>
+                    <p>Min 50% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Realme-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Realme-8s</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Apple-iPhones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>iphone-11</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Motorola-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>MOTO-G</p>
+                    <p>Min 60% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Vivo-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Vivo-V11</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Oppo-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Oppo-11s</p>
+                    <p>Min 30% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Nokia-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Nokia-N11</p>
+                    <p>Min 20% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Asus-Phones" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Asus-ROG11</p>
+                    <p>Min 40% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box">
+            <h2>
+                <marquee direction="right" scrollamount="17" behavior="alternate">Best of Electronics!</marquee>
+            </h2>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Speakers" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Home Theatres</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Laptops" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Laptops</p>
+                    <p>Min 50% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Monitors" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Best Monitors</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Trimmers" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Beard-Styling</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Printers" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Printers</p>
+                    <p>Min 60% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Mobile-Covers" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Designer Covers</p>
+                    <p>Min 25% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Powerbanks" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Powerbanks</p>
+                    <p>Min 30% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Keyboard" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Keyboards</p>
+                    <p>Min 20% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+            <div class="box-items">
+                <img src="https://source.unsplash.com/random/100x100/?Mouse" alt="" width="100px">
+
+                <div class="lines">
+                    <p>Cordless Mouse</p>
+                    <p>Min 40% off</p>
+                    <p>Grab Now!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+
+        Copyright &copy; E-Commerce.com
+    </footer>
+</body>
+
+</html>
